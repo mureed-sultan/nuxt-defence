@@ -1,0 +1,28 @@
+.primary-card{
+    @apply relative;
+    figure{
+        @apply grid grid-cols-6;
+        img{
+            @apply col-start-2 col-span-5
+        }
+    }
+    .heading{
+        @apply absolute bottom-4 text-xs;
+        @screen sm{
+            @apply bottom-8
+        }
+        @screen lg{
+            @apply bottom-24 text-base;
+        }
+        h1{
+            @apply text-xl font-bold my-3 p-1 w-fit;  
+            @screen sm{
+                @apply text-5xl p-4;
+            }
+        }
+        p{
+            @apply text-white;
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+:root {
+  --blue: #375c79;
+  --yellow: #f4ca54;
+}
+img {
+  @apply w-full h-full;
+}
+
+* {
+  @apply m-0 p-0;
+}
+main{
+  padding-top: 4rem;
+  @screen sm{
+    padding-top: 5.9rem;
+
+  }
+}
+.primary{
+  background:var(--yellow);
+  color: var(--blue);
+
+}
+.secondary{
+  background:var(--blue);
+  color: white;
+}

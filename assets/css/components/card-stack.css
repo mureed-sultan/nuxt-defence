@@ -1,0 +1,72 @@
+.card-stack {
+  @apply py-14;
+  .title {
+    @apply w-10/12 mx-auto;
+
+    h1 {
+      @apply text-center font-semibold;
+    }
+    h1 > span {
+      @apply text-5xl px-5 leading-normal py-1;
+      box-decoration-break: clone;
+    }
+    p {
+      @apply text-center p-7 text-lg;
+    }
+  }
+  .content-card {
+    @apply  mx-3 p-0;
+    figure {
+      @apply w-auto h-40;
+    }
+    .content{
+        @apply px-6;
+    }
+    h5,
+    p {
+      @apply text-start;
+    }
+  }
+}
+/* styles for light theme  */
+
+.card-stack.light {
+  background-color: #e6e7ec;
+  h1 {
+    span {
+      @apply text-white;
+      background-color: var(--blue);
+    }
+  }
+  .content-card {
+    @apply bg-white;
+    .content {
+      h5 {
+        color: var(--blue);
+      }
+    }
+  }
+}
+.card-stack.dark {
+  background-color: var(--blue);
+  .title{
+    p{
+        @apply text-white
+    }
+  }
+  h1 {
+    span {
+      @apply text-white;
+      background-color: var(--blue);
+    }
+  }
+  .content-card {
+    @apply bg-white;
+    .content {
+      h5 {
+        color: var(--blue);
+      }
+    }
+  }
+}
+

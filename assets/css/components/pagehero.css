@@ -1,0 +1,55 @@
+.page-hero {
+  @apply relative w-full;
+  .hero-image {
+    figure {
+      height: 44rem;
+      @screen lg {
+        @apply h-full;
+      }
+      img {
+        @apply h-full object-cover;
+      }
+    }
+    @apply relative;
+    .content {
+      @apply absolute top-0 w-full h-full p-5 flex flex-col justify-center;
+      @screen lg {
+        @apply w-10/12 p-20;
+      }
+      h1 {
+        font-size: 1.5rem;
+        @screen sm {
+          font-size: 4.5vw;
+        }
+        @screen xl {
+          font-size: 4rem;
+        }
+        @apply font-medium;
+        span {
+          @apply block w-fit my-4 px-5;
+        }
+      }
+      .description {
+        @apply mt-2 text-white p-6 w-full;
+        @screen lg {
+          @apply w-9/12 mt-10;
+        }
+        background-color: var(--blue);
+      }
+    }
+  }
+  .hero-bottom {
+    @apply text-white py-10 text-center relative flex justify-center;
+    background-color: var(--blue);
+    p {
+      @apply w-10/12 mx-auto;
+    }
+    &:after {
+      content: "";
+      @apply w-0 h-0 absolute;
+      border: 50px solid transparent;
+      border-top: 50px solid var(--blue);
+      bottom: -99px;
+    }
+  }
+}

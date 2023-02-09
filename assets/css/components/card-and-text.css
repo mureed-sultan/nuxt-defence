@@ -1,0 +1,68 @@
+.card-and-text {
+  @apply grid grid-cols-1 py-10 gap-10 px-12;
+  @screen lg {
+    @apply grid-cols-2;
+  }
+  @screen 2xl {
+    @apply px-40;
+    .description {
+      h5,
+      p {
+        @apply text-2xl;
+      }
+    }
+  }
+  .description {
+    @apply flex justify-center flex-col;
+    @apply text-base;
+    p {
+      @apply my-4;
+    }
+  }
+}
+.card-and-text.light {
+  background: #e6e7ec;
+  .description {
+    p strong {
+      color: var(--blue);
+    }
+    h5 {
+      background: var(--yellow);
+      @apply py-2 font-bold px-3 text-xl;
+      color: var(--blue);
+    }
+  }
+}
+.card-and-text.dark {
+  background: var(--blue);
+  .description {
+    @apply text-white;
+    ul{
+        @apply list-disc list-outside;
+        li{
+            @apply pl-3;
+        }
+    }
+  }
+}
+.card-and-text.card-default {
+  @apply p-0;
+ /* @apply bg-red-300; */
+.primary-card{
+  img{
+    @apply col-start-1 col-span-6;
+  }
+  .heading{
+    @apply ml-10;
+  }
+}
+
+  .description {
+   p{
+    @apply text-black;
+    strong{
+      color: var(--blue);
+    }
+   }
+  }
+}

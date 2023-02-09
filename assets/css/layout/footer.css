@@ -1,0 +1,17 @@
+.footer{
+    background-color: #222331;
+    @apply flex justify-between flex-col px-14 gap-10 items-center py-8;
+    @screen lg{
+        @apply flex-row gap-0;
+    }
+    @apply text-white;
+    ul{
+        @apply block;
+        @screen sm{
+            @apply flex;
+        }
+        li{
+            @apply px-2;
+        }
+    }
+}

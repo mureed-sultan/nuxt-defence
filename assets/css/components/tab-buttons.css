@@ -1,0 +1,19 @@
+.tab-buttons{
+    background-color: var(--blue);
+    @apply relative z-10;
+    border-top: 1px solid white;
+    @apply text-white text-center pt-12; 
+    h1{
+        @apply text-5xl pb-5 font-semibold;
+    }
+    p{
+        @apply mx-auto w-10/12;
+    }
+    .tab-button{
+        @apply flex justify-center gap-10 py-12;
+        button:hover{
+            @apply underline;
+            text-underline-offset: 8px;
+        }
+    }
+}

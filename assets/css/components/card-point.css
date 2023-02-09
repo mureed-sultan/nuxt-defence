@@ -1,0 +1,28 @@
+.card-point {
+  @apply pt-14 pb-16;
+  h1 {
+    font-size: 3.7vw;
+    @apply text-center pb-10  font-medium;
+  }
+}
+
+/* background for dark theme  */
+.card-point.dark {
+  background-color: var(--blue);
+  h1 {
+    @apply text-white;
+  }
+  .content {
+    p {
+      @apply text-white;
+    }
+  }
+}
+/* them light  */
+.card-point.light {
+  background-color: #e6e7ec;
+  h1,
+  span {
+    color: var(--blue);
+  }
+}

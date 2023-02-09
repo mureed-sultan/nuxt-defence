@@ -1,0 +1,54 @@
+.formated-text {
+  /* @apply bg-amber-300; */
+  @apply text-center pb-12 pt-20;
+  @screen md {
+    @apply px-32;
+  }
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+  p {
+    @apply mt-6;
+    a {
+      @apply underline;
+    }
+  }
+  ul{
+    @apply text-left w-7/12 mx-auto list-disc mt-10;
+    a{
+        @apply underline;
+    }
+  }
+}
+
+.formated-text.light {
+  background-color: #e6e7ec;
+  h1 {
+    color: var(--blue);
+  }
+  p {
+    @apply text-gray-600;
+  }
+}
+.formated-text.dark {
+  background-color: var(--blue);
+  h1 {
+    color: white;
+  }
+  p {
+    @apply text-white;
+  }
+  ul{
+    @apply text-white;
+    li::marker{
+        @apply text-amber-400
+    }
+  }
+}
+.formated-text.default{
+    @apply text-left;
+    h5{
+        color: var(--blue);
+        @apply font-medium text-lg;
+    }
+}

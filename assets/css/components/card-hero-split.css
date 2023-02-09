@@ -1,0 +1,27 @@
+.card-hero-split {
+  @apply grid grid-cols-1;
+  @screen md {
+    @apply grid-cols-2;
+  }
+  .primary-card {
+    figure {
+      img {
+        @apply col-start-1 col-span-6;
+      }
+    }
+    .heading {
+      @apply ml-14;
+      h1 {
+        font-size: 1rem;
+        @screen sm{
+          font-size: 2rem;
+          
+        }
+      }
+
+      p {
+        @apply w-4/6 font-bold;
+      }
+    }
+  }
+}

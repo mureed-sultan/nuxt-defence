@@ -1,0 +1,28 @@
+/* import pages styles  */
+
+@import "./pages/home.css";
+/* import components styles  */
+@import "./components/pagehero.css";
+@import "./components/primary-card.css";
+@import "./components/card-and-text";
+@import "./components/card-hero-split.css";
+@import "./components/card-point.css";
+@import "./components/content-card.css";
+@import "./components/card-stack.css";
+@import "./components/icons.css";
+@import "./components/formated-text.css";
+@import "./components/tab-buttons.css";
+@import "./components/where-next-card.css";
+@import "./components/tab-container.css";
+
+/* import layout styles */
+@import "./layout/navbar.css";
+@import "./layout/base.css";
+@import "./layout/footer.css";
+/* import plugin styles  */
+@import "./plugins/carousel.css";
+
+/* tailwind configuration  */
+@tailwind base;
+@tailwind components;
+/* @tailwind utilities; */

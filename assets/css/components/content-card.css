@@ -1,0 +1,19 @@
+.content-card{
+    @apply px-5 h-full;
+    figure{
+        @apply w-5/12 m-auto h-24;
+        img{
+            @apply h-full
+        }
+    }
+    h5{
+        @apply text-lg text-center mt-6 leading-8 font-semibold;
+        span{
+            margin: 2px;
+            @apply px-2 py-1
+        }
+    }
+    p{
+        @apply text-center pt-3;
+    }
+}

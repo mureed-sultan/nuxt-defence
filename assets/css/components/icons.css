@@ -1,0 +1,17 @@
+.icons{
+    @apply pt-20 pb-10;
+   h1{
+    color: var(--blue);
+    @apply text-5xl font-semibold text-center;  
+   }
+   .icon{
+    @apply flex mx-auto flex-wrap justify-center items-center w-11/12 mt-10;
+    figure{
+        width: 10rem;
+        @apply mx-7 mt-10;
+        @screen md{
+            width: 18vw;
+        }
+    }
+   } 
+}

@@ -1,0 +1,53 @@
+.tab-container {
+  background: #e6e7ec;
+  /* card and text  */
+  .card-and-text {
+    .description {
+      @apply grid grid-cols-2;
+      p:first-child{
+        @apply col-span-2;
+      };
+      .card{
+        @apply w-7/12 mx-auto;
+        p{
+          @apply text-center;
+          color: var(--blue);
+          @apply font-bold;
+        }
+      }
+    }
+  }
+  /* if card stack  */
+  .card-stack {
+    background-color: #e6e7ec;
+    h1 {
+      span {
+        @apply text-white;
+        background-color: var(--blue);
+      }
+    }
+    p {
+      @apply text-gray-600;
+    }
+    .content-card {
+      @apply bg-white;
+      .content {
+        h5 {
+          color: var(--blue);
+        }
+      }
+    }
+  }
+  /* formated text  */
+  .formated-text {
+    background-color: #f2f2f5;
+    @apply text-left;
+    h1 {
+      color: var(--blue);
+      @apply font-medium text-5xl text-center;
+    }
+    p {
+      @apply text-center text-gray-700;
+    }
+  }
+}

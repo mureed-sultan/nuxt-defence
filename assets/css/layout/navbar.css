@@ -1,0 +1,95 @@
+header {
+  @apply mx-auto fixed w-screen z-10;
+  @apply p-7;
+  background-color: var(--blue);
+  @apply flex;
+  @screen lg {
+    @apply justify-between;
+    .menu {
+      @apply hidden;
+    }
+  }
+  .menu {
+    @apply w-7 bg-white my-auto relative rounded;
+    transition: 100ms;
+    height: 3px;
+    &:after,
+    &:before {
+      transition: 500ms;
+      content: "";
+      @apply w-full bg-white block absolute;
+      height: 3px;
+    }
+    &:after {
+      @apply top-2;
+    }
+    &:before {
+      @apply bottom-2;
+    }
+  }
+  .menu.change {
+    @apply h-0;
+    &:after {
+      transform: translate(0, -11px) rotate(-45deg);
+    }
+    &:before {
+      transform: translate(0, 9px) rotate(45deg);
+    }
+  }
+  .logo {
+    @apply justify-self-center m-auto;
+    width:22rem;
+    a{
+     @apply mx-auto block;
+     width: 65vw;
+     @screen sm{
+      @apply w-96;
+     }
+    }
+    @screen lg {
+      @apply m-0;
+    }
+  }
+  nav {
+    top: -110vh;
+    @apply absolute;
+    z-index:-1;
+    transition: 600ms;
+    background: var(--blue);
+    @apply w-screen left-0 h-screen flex justify-center items-center;
+    ul {
+      li {
+        @apply text-white text-2xl mx-6 py-5 relative;
+        @screen sm{
+          @apply mx-auto;
+        }
+        &:after {
+          content: "";
+          @apply absolute w-0 bg-white left-2/4;
+          height:2px;
+          bottom: -4px;
+          transition: all 0.45s;
+        }
+        &:hover {
+          &:after {
+            @apply w-full left-0
+          }
+        }
+      }
+    }
+    @screen lg {
+      @apply h-auto;
+      @apply static justify-end;
+      @apply my-auto;
+      ul {
+        @apply flex text-white text-sm justify-center;
+        li {
+          @apply text-sm px-2 py-0;
+        }
+      }
+    }
+  }
+}
+.active {
+  @apply top-20;
+}
